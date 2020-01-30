@@ -1,0 +1,62 @@
+{
+  "name": "levelup-001",
+  "version": "1.0.0",
+  "description": "The first task from Level-Up",
+  "main": "source/index.js",
+  "scripts": {
+    "fix:other": "npm run prettier --write",
+    "fix:code": "npm run test:code --fix",
+    "fix": "npm run fix:code && npm run fix:other",
+    "prettier": "prettier \"**/*.{json,md,scss,yaml,yml}\"",
+    "test:other": "npm run prettier --list-different",
+    "test:code": "eslint --ignore-path .gitignore --ignore-path .prettierignore --ext .js,.jsx .",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrmowji/levelup-001.git"
+  },
+  "author": "Mojtaba Javan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrmowji/levelup-001/issues"
+  },
+  "homepage": "https://github.com/mrmowji/levelup-001#readme",
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@types/node": "^13.5.0",
+    "@typescript-eslint/eslint-plugin": "^2.17.0",
+    "@typescript-eslint/parser": "^2.17.0",
+    "babel-jest": "^25.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-import": "^2.20.0",
+    "husky": "4.2.0",
+    "jest": "^25.1.0",
+    "lint-staged": "10.0.2",
+    "prettier": "1.19.1"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{json,md,scss,yaml,yml}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "remark": "^11.0.2",
+    "strip-markdown": "^3.1.1",
+    "typescript": "^3.7.5"
+  }
+}
