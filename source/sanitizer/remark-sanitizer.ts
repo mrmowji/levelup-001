@@ -1,9 +1,7 @@
-import ISanitizer from "./ISanitizer";
-
 const remark = require("remark");
 const stripMarkdown = require("strip-markdown");
 
-class RemarkSanitizer implements ISanitizer {
+class RemarkSanitizer {
   text: string;
 
   constructor(text: string) {
