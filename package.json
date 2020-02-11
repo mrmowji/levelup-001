@@ -2,7 +2,7 @@
   "name": "levelup-001",
   "version": "1.0.0",
   "description": "The first task from Level-Up",
-  "main": "source/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "fix:other": "npm run prettier --write",
     "fix:code": "npm run test:code --fix",

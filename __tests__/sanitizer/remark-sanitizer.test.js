@@ -1,4 +1,4 @@
-import Sanitizer from "../../source/sanitizer/remark-sanitizer";
+import Sanitizer from "../../dist/sanitizer/remark-sanitizer";
 
 describe("Remark Sanitizer", () => {
   test("HTML <p>", () => {

@@ -1,5 +1,5 @@
 import axios from 'axios';
-import TypicodeEndpoint from '../source/endpoint/typicode-endpoint';
+import TypicodeEndpoint from '../dist/endpoint/typicode-endpoint';
 
 jest.mock('axios');
 

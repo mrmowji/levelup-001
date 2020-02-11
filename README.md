@@ -11,5 +11,5 @@ In this task, we had to implement a simple CLI app that accepts a string and pos
 - Install Nodejs. NPM will be installed too.
 - Navigate to the project's directory.
 - `npm install` to install required packages (modules).
-- `npx tsc` to transpile TypeScript source files (`*.ts`) into corresponding JavaScript files (`*.js`).
+- `npx tsc` to transpile TypeScript source files (`*.ts`) into corresponding JavaScript files (`*.js`). The compiled files will be inside `dist` directory.
 - `node .` to run the app.
